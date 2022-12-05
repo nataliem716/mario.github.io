@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        body{
+            background-image: url(mariobackground.png);
+            background-size: 1250px;
+            width: ;
+            height: ;
+        }
+
+        .peachwalk{
+            background-image: url(mario-jump.png);
+            width: 90px;
+            height: 175px;
+            margin-top: 450px;
+            animation: mario 1s steps(5) infinite, run 3s linear infinite;
+        }
+
+        @keyframes mario{
+            0% {background-position: 0px;}
+            100% {background-position: 3000px;}
+        }
+
+        @keyframes run{
+            0% {transform:translate(-500px);}
+            100%{transform:translate(1600px)}
+        }
+
+    </style>
+<body>
+    <div class="container"></div>
+    <div class="peachwalk"></div>
+</body>
+</html>
